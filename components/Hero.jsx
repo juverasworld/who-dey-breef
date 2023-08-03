@@ -14,7 +14,7 @@ const Hero = () => {
 
                 <div className="mt-16">
                     <p className='font-bold md:text-3xl text-2xl text-center'>Your experience level is not <br className="md:flex hidden" />important</p>
-                    <p className="text-gray-400 my-3 md:text-center text-justify">Whether you're a seasoned trader looking to enhance your skills or a newcomer eager to <br className="md:flex hidden" /> dive into this exciting field, this immersive and comprehensive program is tailored to meet <br className="md:flex hidden" /> your needs and take your trading game to new heights in just 5 days!</p>
+                    <p className="text-gray-400 my-3 md:text-center text-justify">Whether you are a seasoned trader looking to enhance your skills or a newcomer eager to <br className="md:flex hidden" /> dive into this exciting field, this immersive and comprehensive program is tailored to meet <br className="md:flex hidden" /> your needs and take your trading game to new heights in just 5 days!</p>
 
                 </div>
                 <div className=" flex  md:flex-row flex-col align-center   justify-center w-full my-3">
