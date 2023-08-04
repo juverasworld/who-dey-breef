@@ -73,7 +73,7 @@ const Hero = () => {
         <div className="flex justify-center items-center md:my-32 my-10">
             <div className="bg-[#FCEFEF] text-center p-4 rounded-2xl ">
                 <p className="font-bold md:text-3xl text-2xl">
-                    Don't miss out on this <br /> opportunity to transform your <br className='md:block hidden' /> trading journey!
+                    Don `&apos;`t miss out on this <br /> opportunity to transform your <br className='md:block hidden' /> trading journey!
                 </p>
                 <p className="text-gray-700 my-3">
                     This live trading class goes beyond just theoretical knowledge – it provides you with
@@ -93,7 +93,7 @@ const Hero = () => {
                         </li>
                         <li className="my-5">You will get to make LIVE TRADES RIGHT AT THE EVENT and make <br className="md:flex hidden" /> yourself money while still learning the deep lessons of the market!</li>
                         <li className="my-5">
-                            Don't miss this opportunity to become a savvy crypto trader!
+                            Don `&apos;`t miss this opportunity to become a savvy crypto trader!
                         </li>
                         <li className="my-5">Register now to secure your spot and embark on an exciting journey <br className="md:flex hidden" />towards financial freedom!</li>
                     </ul>
