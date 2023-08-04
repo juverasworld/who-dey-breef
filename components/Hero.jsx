@@ -49,41 +49,65 @@ const Hero = () => {
                 </div>
             </div>
         </section>
-                <div className=" bg-[#D8383A] ">
-                    <div className="flex md:flex-row flex-col justify-center py-10 text-white md:space-x-10">
-                        <div className=" text-white"> <p className='text-3xl font-bold'>
-                            Your Wealth <br /> Creation Story <br /> Awaits You!
-                        </p>
-                            <p className='mt-5 md:flex hidden'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
-                            <div className="">
+        <div className=" bg-[#D8383A] ">
+            <div className="flex md:flex-row flex-col justify-center py-10 text-white md:space-x-10">
+                <div className=" text-white"> <p className='text-3xl font-bold'>
+                    Your Wealth <br /> Creation Story <br /> Awaits You!
+                </p>
+                    <p className='mt-5 md:flex hidden'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
+                <div className="">
 
 
-                        <ul className="custom-list mt-6 ml-0">
+                    <ul className="custom-list mt-6 ml-0">
                         <p>Program details</p>
-                            <li>DABA Head Ofiice, Lekki Lagos </li>
-                            <li>Friday, August 11 2023 </li>
-                            <li>Monday, August 14 2023 </li>
-                        </ul>
-                            </div>
-
-                    </div>
-                    <p className='mt-3 md:hidden flex'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
+                        <li>DABA Head Ofiice, Lekki Lagos </li>
+                        <li>Friday, August 11 2023 </li>
+                        <li>Monday, August 14 2023 </li>
+                    </ul>
                 </div>
 
-                <div className="flex justify-center items-center md:my-24 my-10">
-  <div className="bg-[#FCEFEF] text-center p-4 rounded-2xl ">
-    <p className="font-bold md:text-3xl text-2xl">
-      Don't miss out on this <br /> opportunity to transform your <br className='md:block hidden' /> trading journey!
-    </p>
-    <p className="text-gray-700 my-3">
-      This live trading class goes beyond just theoretical knowledge – it provides you with
-      <br className="md:block hidden" /> practical skills, expert guidance, and ongoing support to become a confident and
-      <br className="md:block hidden" /> successful trader in the dynamic mar financial market!
-    </p>
-    <p className=''><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
-  </div>
-</div>
+            </div>
+            <p className='mt-3 md:hidden flex'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
+        </div>
 
+        <div className="flex justify-center items-center md:my-32 my-10">
+            <div className="bg-[#FCEFEF] text-center p-4 rounded-2xl ">
+                <p className="font-bold md:text-3xl text-2xl">
+                    Don't miss out on this <br /> opportunity to transform your <br className='md:block hidden' /> trading journey!
+                </p>
+                <p className="text-gray-700 my-3">
+                    This live trading class goes beyond just theoretical knowledge – it provides you with
+                    <br className="md:block hidden" /> practical skills, expert guidance, and ongoing support to become a confident and
+                    <br className="md:block hidden" /> successful trader in the dynamic mar financial market!
+                </p>
+                <p className=''><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
+            </div>
+        </div>
+
+        <div className="bg-black text-white py-5">
+            <div className="flex justify-center items-center md:my-32 my-10">
+                <div className=" text-center p-4 rounded-2xl ">
+                    <p className="font-bold md:text-3xl text-2xl">This Masterclass is <br className="md:flex hidden" />designed to pay for itself</p>
+                    <ul className='text-left'>
+                        <li className="my-5">This masterclass is designed to “pay for itself” and put money back in <br className="md:flex hidden" /> your pocket even before the training is over!
+                        </li>
+                        <li className="my-5">You will get to make LIVE TRADES RIGHT AT THE EVENT and make <br className="md:flex hidden" /> yourself money while still learning the deep lessons of the market!</li>
+                        <li className="my-5">
+                            Don't miss this opportunity to become a savvy crypto trader!
+                        </li>
+                        <li className="my-5">Register now to secure your spot and embark on an exciting journey <br className="md:flex hidden" />towards financial freedom!</li>
+                    </ul>
+                    <p className='mt-3 '><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
+                </div>
+            </div>
+        </div>
+        <div className="flex md:flex-row flex-col">
+            <div className="w-1/2">
+                <p className="text-sm font-bold text-gray-400">Learn from</p>
+                p.font-bold
+            </div>
+            <div className="w-1/2"></div>
+        </div>
     </>);
 }
 
