@@ -24,7 +24,7 @@ ul{
 /* Customize the list bullets */
 ul.custom-list {
   list-style-type: none;
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
 }
 
 ul.custom-list li:before {
