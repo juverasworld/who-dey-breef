@@ -119,7 +119,7 @@ const Hero = () => {
                 <p className='mt-5'><button className="rounded-full px-7 py-5 tex-sm  bg-[#D8383A] text-white">Enroll now!</button></p>
             </div>
             <div className="">
-                <Image src={MrChris} width={400} height={450} className='w-auto h-auto' />
+                <Image src={MrChris} width={400} height={450} className='w-auto h-auto' alt="No network" />
             </div>
         </div>
         <div className="font-bold item-center text-center md:text-5xl text-3xl my-16 hero">Guest Tutors</div>
@@ -127,13 +127,13 @@ const Hero = () => {
             
                 <p className='px-3 py-5'>
 
-                <Image src={omzi} width={275} height={350} className=''/>
+                <Image src={omzi} width={275} height={350} className='' alt="No network"/>
                 </p>
                 <p className="px-5 py-5">Millz is one of the crypto market analyst , he is <br className="md:flex hidden" />a very patient and skillful trader with massive <br className="md:flex hidden" /> success and wins in the market  .He is also <br className="md:flex hidden" />one of the market analyst at Cryptohub <br className="md:flex hidden" />working closely with chris Ani to deliver solid<br className="md:flex hidden" /> experience for the community.</p>
             
            <p className='px-3 py-5'>
 
-            <Image src={boss} width={200} height={250} className='w-auto h-auto'/>
+            <Image src={boss} width={200} height={250} className='w-auto h-auto' alt="Mr Ozi"/>
            </p>
            <p className='px-5 py-5'>
            Mr Ozi he is a solid trader and market analyst <br className="md:flex hidden" /> at Cryptohub.club with over 4 years <br className="md:flex hidden" />experience
@@ -161,7 +161,7 @@ HENCE, THIS IS A FIRST COME FIRST SERVE OFFER!</p>
         </div>
         </div>
         <div className=""> 
-        <div className="">Hereapos;s Everything You'll Get: </div>
+        <div className="">Hereapos;s Everything You&apos;ll Get: </div>
         <div className=" mx-5 px-5 py-10">
 
         <div className=' flex md:flex-row flex-col md:items-center md:space-x-10 mx-5'>
