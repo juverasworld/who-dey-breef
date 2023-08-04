@@ -22,7 +22,7 @@ const Hero = () => {
 
                 </div>
                 <div className=" flex  md:flex-row flex-col align-center   justify-center w-full my-3">
-                    <p className='flex align-center items-center rounded-full px-4 py-4 font-bold space-x-7 whitespace-nowrap   bg-gray-100 mx-3 my-2'> <span>
+                    <p className='flex align-center items-center rounded-full px-5 py-4 font-bold space-x-3 whitespace-nowrap   bg-gray-100 mx-3 my-2'> <span>
                         <FaCalendarAlt size={20} />
 
                     </span>
@@ -31,7 +31,7 @@ const Hero = () => {
                         </span>
                     </p>
 
-                    <p className='flex align-center items-center rounded-full px-4 py-4 font-bold space-x-7 bg-gray-100 mx-3 my-2 whitespace-nowrap '>
+                    <p className='flex align-center items-center rounded-full px-5 py-4 font-bold space-x-3 bg-gray-100 mx-3 my-2 whitespace-nowrap '>
                         <span>
                             <FaMapMarkerAlt size={20} />
                         </span>
@@ -161,11 +161,11 @@ HENCE, THIS IS A FIRST COME FIRST SERVE OFFER!</p>
         </div>
         </div>
         <div className=""> 
-        <div className="">Hereapos;s Everything You&apos;ll Get: </div>
+        <div className=" text-center font-bold text-2xl my-5 hero">Here&apos;s Everything You&apos;ll Get: </div>
         <div className=" mx-5 px-5 py-10">
 
         <div className=' flex md:flex-row flex-col md:items-center md:space-x-10 mx-5'>
-            <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
+        <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
                     1
                 </span>
@@ -174,41 +174,44 @@ HENCE, THIS IS A FIRST COME FIRST SERVE OFFER!</p>
             </div>
             <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
-                    1
+                    2
                 </span>
-                <div className='font-bold hero my-3'> Crypto Market Fundamentals</div>
-                <div className='pb-5'>Understand the core concepts and principles that<br className='md:flex hidden'/> drive the cryptocurrency market, including <br className='md:flex hidden'/> blockchain technology, decentralized finance <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
+                <div className='font-bold hero my-3'> Technical Analysis Skills</div>
+                {/*      moving averages, and oscillators. */}
+                <div className='pb-5'>Master the art of analyzing charts, trends, entry and exit<br className='md:flex hidden'/>  points for your trades. Gain insights into various trading<br className='md:flex hidden'/> strategies, including support and resistance levels, <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
             </div>
+            
             <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
-                    1
+                    3
                 </span>
-                <div className='font-bold hero my-3'> Crypto Market Fundamentals</div>
-                <div className='pb-5'>Understand the core concepts and principles that<br className='md:flex hidden'/> drive the cryptocurrency market, including <br className='md:flex hidden'/> blockchain technology, decentralized finance <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
+                {/*     */}
+                <div className='font-bold hero my-3'> Risk Management Skills</div>
+                <div className='pb-5'>Discover essential risk management techniques to<br className='md:flex hidden'/>protect your capital and minimize potential losses. <br className='md:flex hidden'/> Learn how to set stop-loss orders, calculate <br className='md:flex hidden'/> position sizing, and effectively manage your trading portfolio.</div>
             </div>
             
         </div>
         <div className=' flex md:flex-row flex-col md:items-center md:space-x-10 mx-5'>
             <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
-                    1
+                    4
                 </span>
-                <div className='font-bold hero my-3'> Crypto Market Fundamentals</div>
-                <div className='pb-5'>Understand the core concepts and principles that<br className='md:flex hidden'/> drive the cryptocurrency market, including <br className='md:flex hidden'/> blockchain technology, decentralized finance <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
+                <div className='font-bold hero my-3'>Fundamentals Analysis</div>
+                <div className='pb-5'>Explore the key factors that influence cryptocurrency prices, such as news events, partnerships, regulatory developments, and market sentiment. Learn how to evaluate the fundamentals of different cryptocurrencies and make informed investment decisions.</div>
             </div>
             <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
-                    1
+                    5
                 </span>
-                <div className='font-bold hero my-3'> Crypto Market Fundamentals</div>
-                <div className='pb-5'>Understand the core concepts and principles that<br className='md:flex hidden'/> drive the cryptocurrency market, including <br className='md:flex hidden'/> blockchain technology, decentralized finance <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
+                <div className='font-bold hero my-3'>Market Psychology</div>
+                <div className='pb-5'>Uncover the psychological aspects of trading and develop a strong mindset for success. Learn how to control emotions, overcome fear and greed, and stay disciplined in volatile market conditions.</div>
             </div>
             <div className='border-2 px-3 py-4 rounded-2xl my-5 bg-[#FBEBEB]'>
                 <span className='border-2 border-orange-500 font-bold px-3 rounded-md py-1'>
-                    1
+                    6
                 </span>
                 <div className='font-bold hero my-3'> Crypto Market Fundamentals</div>
-                <div className='pb-5'>Understand the core concepts and principles that<br className='md:flex hidden'/> drive the cryptocurrency market, including <br className='md:flex hidden'/> blockchain technology, decentralized finance <br className='md:flex hidden'/> (DEFI), and  tokenomics.</div>
+                <div className='pb-5'>Get hands-on experience with popular cryptocurrency trading platforms, tools, and order types. Learn how to execute trades effectively, set up stop orders, and utilize advanced features for enhanced trading efficiency.</div>
             </div>
             
         </div>
