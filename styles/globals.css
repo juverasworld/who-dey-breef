@@ -13,6 +13,52 @@ body {
   margin: 0;
  
 }
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup .content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* max-width: 70%x; */
+  width: 90%;
+}
+
+.popup .content h2 {
+  margin-top: 0;
+}
+
+.popup .content p {
+  margin-bottom: 20px;
+}
+
+.popup .cancel-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+
 .notification {
   position: fixed;
   bottom: 20px;

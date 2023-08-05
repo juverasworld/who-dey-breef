@@ -1,6 +1,7 @@
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import Link from "next/link"
 import Copy from "./Copy";
+import Pop from "./Pop";
 import message from "../public/message.png"
 import hero from '../public/hero.png'
 import danger from '../public/danger.png'
@@ -8,13 +9,29 @@ import MrChris from "../public/MrChris.png"
 import boss from "../public/boss.png"
 import omzi from "../public/omzi.png"
 import { FaCalendarAlt } from 'react-icons/fa';
-import Image from "next/image"
+import Image from "next/image";
+import React, { useEffect } from 'react';
+// import locomotiveScroll from 'locomotive-scroll';
+
 const Hero = () => {
-    return (<>
+//    useEffect(() => {
+//     const scroll = new LocomotiveScroll({
+//       el: document.querySelector('#scroll-container'),
+//       smooth: true, // Add other LocomotiveScroll options as needed
+//     });
+
+//     // Clean up LocomotiveScroll instance on unmount
+//     return () => {
+//       scroll.destroy();
+//     };
+//   }, []);
+    return (
+        <>
+        <Pop/>
         <section className="mx-2">
             <div className="text-center  my-10 mx-3 "><p className="md:text-5xl text-[39px] hero font-extrabold whitespace-normal">Unlock The Secrets Of <br className="md:flex hidden" /> Wealthy Trading In 5 Days!</p>
                 <p className="text-gray-400 my-3 md:text-center ">Trade your way out of recession with this one-of-a-kind opportunity to immerse yourself in the world of <br className="md:flex hidden" />physical trading and gain invaluable knowledge from industry experts.</p>
-                <p className='my-10'><button className="rounded-full px-8 md:py-2 py-5 bg-[#D8383A] text-white whitespace-nowrap">Enroll now!</button></p>
+                <p className='my-10'><button className="rounded-full px-8  py-5 bg-[#D8383A] text-white whitespace-nowrap">Enroll now!</button></p>
                 <p className='mx-auto my-10'>
                     <Image src={hero} alt="join us" width={600} height={550} className='mx-auto h-auto w-auto' />
                 </p>
@@ -43,11 +60,11 @@ const Hero = () => {
                         </span>
                     </p>
                 </div>
-                <p className='my-10'><button className="rounded-full px-8 md:py-2 py-5 bg-[#D8383A] text-white ">Enroll now!</button></p>
+                <p className='my-10'><button className="rounded-full px-8  py-5 bg-[#D8383A] text-white ">Enroll now!</button></p>
                 <div className='md:my-16 my-5'>
                     <div className=" flex  md:flex-row flex-col align-center   justify-center w-full my-3 space-x-4">
                         <p className='my-2'><button className="bg-[#FBEBEB] px-3  rounded-full w-full md:py-3 py-5 tex-sm font-bold border-2 border-[#D8383A]  ">IN DEPT UNDERSTANDING</button></p>
-                        <p className='my-2'> <button className=" px-10 md:py-3 py-5 text-sm bg-[#CDECE1] border-2 border-[#CDfCE1] font-bold rounded-full w-full">REAL LIFE CASE STUDIES</button></p>
+                        <p className='my-2'> <button className=" md:px-10 px-16 md:py-3 py-5 text-sm bg-[#CDECE1] border-2 border-[#CDfCE1] font-bold rounded-full w-full">REAL LIFE CASE STUDIES</button></p>
                     </div>
                     <div className=" flex  md:flex-row flex-col align-center   justify-center w-full md:my-5 space-x-4">
                         <p className='md:mb-0   mb-2'><button className="bg-[#D4E6F7] px-3 md:py-3 py-5 tex-sm font-bold rounded-full w-full">INTENSIVE ONE-ON-ONES</button></p>
@@ -87,7 +104,7 @@ const Hero = () => {
                     <br className="md:block hidden" /> practical skills, expert guidance, and ongoing support to become a confident and
                     <br className="md:block hidden" /> successful trader in the dynamic mar financial market!
                 </p>
-                <p className=''><button className="rounded-full px-5 py-5 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
+                <p className=''><button className="rounded-full px-8 py-5 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
             </div>
         </div>
 
@@ -163,8 +180,8 @@ const Hero = () => {
 
             </div>
         </div>
-        <div className="">
-            <div className=" text-center font-bold text-2xl my-5 hero">Here&apos;s Everything You&apos;ll Get: </div>
+        <div className="md:my-16">
+            <div className=" text-center font-bold text-3xl my-5 ">Here&apos;s Everything You&apos;ll Get: </div>
             <div className=" mx-5 px-5 py-10">
 
                 <div className=' flex md:flex-row flex-col md:items-center md:space-x-10 md:mx-5 mx-2'>
@@ -302,13 +319,13 @@ const Hero = () => {
             <p className='mt-3 pb-24 mx-5 md:hidden flex text-center'><button className="rounded-full px-5 py-4 tex-sm font-bold  bg-white text-black">Get Started</button></p>
         </div>
 
-        <div className="bg-[#5741DB] text-white py-10 items-center  justify-center">
+        <div className="bg-[#5741DB] text-white py-10 items-center  justify-center" id="scroll-container">
             <div className="items-center text-center ">
                 <p className="">Best Value. One Time Payment</p>
                 <p className="text-2xl py-5"><span className="font-bold text-5xl">₦170,000</span> <span className="text-gray-200 px-5">~$200</span> </p></div>
             <div className="flex items-center justify-center md:text-center">
                 <div className="flex md:flex-row flex-col">
-                    <div className='md:pr-24 md:border-r-2 '>
+                    <div className='md:pr-24 md:border-r-2 border-gray-400 '>
                         <p className="text-gray-400 py-5">DIRECT BANK TRANSFER</p>
                         <p className=" py-2">Bank: First Bank Nigeria</p>
                         <p className=" py-2">Account name: Digital Abundance</p>
@@ -326,7 +343,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="items-center text-center my-5">
+            <div className="items-center text-center my-5 md:my-16">
                 <p className="">Send proof of all payment to Ruth</p>
                 <p className='mt-3 pb-24 mx-auto justify-center items-center flex text-center'>
                     <Link href="https://api.whatsapp.com/send?phone=2348094703225&text=Hello%20Ruth">
