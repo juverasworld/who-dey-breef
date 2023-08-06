@@ -119,15 +119,15 @@ const Hero = () => {
                         </li>
                         <li className="my-5">You will get to make LIVE TRADES RIGHT AT THE EVENT and make <br className="md:flex hidden" /> yourself money while still learning the deep lessons of the market!</li>
                         <li className="my-5">
-                            Don `&apos;`t miss this opportunity to become a savvy crypto trader!
+                            Don&apos;t miss this opportunity to become a savvy crypto trader!
                         </li>
                         <li className="my-5">Register now to secure your spot and embark on an exciting journey <br className="md:flex hidden" />towards financial freedom!</li>
                     </ul>
-                    <p className='mt-3 '><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-16 py-7 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
+                    <p className='mt-3 '><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-14 py-7 text-sm font-bold  bg-white text-black">Enroll now!</button></p>
                 </div>
             </div>
         </div>
-        <div className="flex lg:flex-row  justify-center flex-col ">
+        <div className="flex lg:flex-row  items-center justify-center flex-col ">
             <div className=" my-10 mx-5">
                 <p className="text-2xl   font-bold text-gray-400">Learn from</p>
                 <p className="font-bold text-5xl my-4 hero ">Chris Ani</p>
@@ -182,7 +182,7 @@ const Hero = () => {
 
             </div>
         </div>
-        <div className="md:my-16">
+        <div className="md:my-16 my-5">
             <div className=" text-center font-bold text-3xl my-5 ">Here&apos;s Everything You&apos;ll Get: </div>
             <div className=" mx-5 px-5 py-10">
 
@@ -311,9 +311,9 @@ const Hero = () => {
 
                     <ul className="custom-list font-light mt-6 ml-0 ">
                         <p className='my-10 font-bold'>Program details</p>
-                        <li className='my-5'>DABA Head Ofiice, Lekki Lagos </li>
-                        <li className='my-5'>Friday, August 11 2023 </li>
-                        <li className='my-5'>Monday, August 14 2023 </li>
+                        <li className='my-3'>DABA Head Ofiice, Lekki Lagos </li>
+                        <li className='my-3'>Friday, August 11 2023 </li>
+                        <li className='my-3'>Monday, August 14 2023 </li>
                     </ul>
                 </div>
 
