@@ -11,32 +11,34 @@ import omzi from "../public/omzi.png"
 import { FaCalendarAlt } from 'react-icons/fa';
 import Image from "next/image";
 import React, { useEffect } from 'react';
+// import LocomotiveScroll from 'locomotive-scroll';
 // import locomotiveScroll from 'locomotive-scroll';
 
 const Hero = () => {
-//    useEffect(() => {
-//     const scroll = new LocomotiveScroll({
-//       el: document.querySelector('#scroll-container'),
-//       smooth: true, // Add other LocomotiveScroll options as needed
-//     });
+    function scrollToSection(sectionId: string) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }}
 
-//     // Clean up LocomotiveScroll instance on unmount
-//     return () => {
-//       scroll.destroy();
-//     };
-//   }, []);
+          
     return (
         <>
+        
         <Pop/>
-        <section className="mx-2">
+        <section className="mx-2"  >
             <div className="text-center  my-10 mx-3 "><p className="md:text-5xl text-[39px] hero font-extrabold whitespace-normal">Unlock The Secrets Of <br className="md:flex hidden" /> Wealthy Trading In 5 Days!</p>
                 <p className="text-gray-400 my-3 md:text-center ">Trade your way out of recession with this one-of-a-kind opportunity to immerse yourself in the world of <br className="md:flex hidden" />physical trading and gain invaluable knowledge from industry experts.</p>
-                <p className='my-10'><button className="rounded-full px-8  py-5 bg-[#D8383A] text-white whitespace-nowrap">Enroll now!</button></p>
+                <p className='my-10'><button   onClick={() => scrollToSection('target-section')}  className="rounded-full px-8  py-5 bg-[#D8383A] text-white whitespace-nowrap">Enroll now!</button></p>
                 <p className='mx-auto my-10'>
-                    <Image src={hero} alt="join us" width={600} height={550} className='mx-auto h-auto w-auto' />
+                <video autoPlay muted controls  className='mx-auto h-auto w-auto flex items-center justify-center' >
+        <source src="/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+                    {/* <Image src={hero} alt="join us" width={600} height={550}  /> */}
                 </p>
 
-                <div className="mt-16">
+                <div className="mt-16 " >
                     <p className='font-extrabold md:text-3xl text-[33px] md:ml-0 ml-2 hero text-center'>Your experience level is not <br className="md:flex hidden" />important</p>
                     <p className="text-gray-400 my-10 text-center ">Whether you are a seasoned trader looking to enhance your skills or a newcomer eager to <br className="md:flex hidden" /> dive into this exciting field, this immersive and comprehensive program is tailored to meet <br className="md:flex hidden" /> your needs and take your trading game to new heights in just 5 days!</p>
 
@@ -60,15 +62,15 @@ const Hero = () => {
                         </span>
                     </p>
                 </div>
-                <p className='my-10'><button className="rounded-full px-8  py-5 bg-[#D8383A] text-white ">Enroll now!</button></p>
+                <p className='my-10'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-8  py-5 bg-[#D8383A] text-white ">Enroll now!</button></p>
                 <div className='md:my-16 my-5'>
                     <div className=" flex  md:flex-row flex-col align-center   justify-center w-full my-3 space-x-4">
-                        <p className='my-2'><button className="bg-[#FBEBEB] px-3  rounded-full w-full md:py-3 py-5 tex-sm font-bold border-2 border-[#D8383A]  ">IN DEPT UNDERSTANDING</button></p>
-                        <p className='my-2'> <button className=" md:px-10 px-16 md:py-3 py-5 text-sm bg-[#CDECE1] border-2 border-[#CDfCE1] font-bold rounded-full w-full">REAL LIFE CASE STUDIES</button></p>
+                        <p className='my-2'><button    className="bg-[#FBEBEB] px-3  rounded-full w-full md:py-3 py-5 tex-sm font-bold border-2 border-[#D8383A]  ">IN DEPT UNDERSTANDING</button></p>
+                        <p className='my-2'> <button    className=" md:px-10 px-16 md:py-3 py-5 text-sm bg-[#CDECE1] border-2 border-[#CDfCE1] font-bold rounded-full w-full">REAL LIFE CASE STUDIES</button></p>
                     </div>
                     <div className=" flex  md:flex-row flex-col align-center   justify-center w-full md:my-5 space-x-4">
-                        <p className='md:mb-0   mb-2'><button className="bg-[#D4E6F7] px-3 md:py-3 py-5 tex-sm font-bold rounded-full w-full">INTENSIVE ONE-ON-ONES</button></p>
-                        <p className='md:my-0 my-2'> <button className=" md:py-3 py-5 tex-sm font-bold bg-[#DDD9F8] rounded-full w-full px-8">LIVE WEALTH CREATION</button></p>
+                        <p className='md:mb-0   mb-2'><button    className="bg-[#D4E6F7] px-3 md:py-3 py-5 tex-sm font-bold rounded-full w-full">INTENSIVE ONE-ON-ONES</button></p>
+                        <p className='md:my-0 my-2'> <button   className=" md:py-3 py-5 tex-sm font-bold bg-[#DDD9F8] rounded-full w-full px-8">LIVE WEALTH CREATION</button></p>
                     </div>
                 </div>
             </div>
@@ -78,7 +80,7 @@ const Hero = () => {
                 <div className=" text-white"> <p className='text-4xl font-bold leading-relaxed'>
                     Your Wealth <br /> Creation Story <br /> Awaits You!
                 </p>
-                    <p className='mt-5 md:flex hidden'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
+                    <p className='mt-5 md:flex hidden'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
                 <div className="md:m-0 mx-0">
 
 
@@ -91,7 +93,7 @@ const Hero = () => {
                 </div>
 
             </div>
-            <p className='mt-3 pb-24 mx-5 md:hidden flex text-center'><button className="rounded-full px-5 py-4 tex-sm font-bold  bg-white text-black">Get Started</button></p>
+            <p className='mt-3 pb-24 mx-5 md:hidden flex text-center'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-5 py-4 tex-sm font-bold  bg-white text-black">Get Started</button></p>
         </div>
 
         <div className="flex justify-center items-center md:my-32 my-16 px-5">
@@ -104,7 +106,7 @@ const Hero = () => {
                     <br className="md:block hidden" /> practical skills, expert guidance, and ongoing support to become a confident and
                     <br className="md:block hidden" /> successful trader in the dynamic mar financial market!
                 </p>
-                <p className=''><button className="rounded-full px-8 py-5 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
+                <p className=''><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-8 py-5 tex-sm font-bold  bg-[#D8383A] text-white">Enroll now!</button></p>
             </div>
         </div>
 
@@ -121,7 +123,7 @@ const Hero = () => {
                         </li>
                         <li className="my-5">Register now to secure your spot and embark on an exciting journey <br className="md:flex hidden" />towards financial freedom!</li>
                     </ul>
-                    <p className='mt-3 '><button className="rounded-full px-16 py-7 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
+                    <p className='mt-3 '><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-16 py-7 tex-sm font-bold  bg-white text-black">Enroll now!</button></p>
                 </div>
             </div>
         </div>
@@ -136,7 +138,7 @@ const Hero = () => {
                     <p className="">In 2017, Chris Ani pioneered Cryptohub.club, the ﬁrst platform in <br className="md:flex hidden" />Nigeria for bitcoin, blockchain and cryptocurrency education, which <br className="md:flex hidden" />receives monthly web visitors from over 40 nations.</p>
                     <p className="">He is the 2020 recipient of the Binance Influencer Award for Africa and <br className="md:flex hidden" />the Middle East.</p>
                 </div>
-                <p className='mt-5'><button className="rounded-full px-7 py-5 tex-sm  bg-[#D8383A] text-white">Enroll now!</button></p>
+                <p className='mt-5'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-7 py-5 tex-sm  bg-[#D8383A] text-white">Enroll now!</button></p>
             </div>
             <div className="">
                 <Image src={MrChris} width={400} height={450} className='w-auto h-auto' alt="No network" />
@@ -173,7 +175,7 @@ const Hero = () => {
                             We are only interested in getting SERIOUS-MINDED individuals who are <br className="md:flex hidden" /> ready to change their financial story and trade their way into wealth!</p>
                         <p>And so we are only taking 10 persons into this program.<br className="md:flex hidden" />
                             HENCE, THIS IS A FIRST COME FIRST SERVE OFFER!</p>
-                        <p className='mt-3 items-center flex justify-center text-center '><button className="rounded-full px-8 py-5 items-center tex-sm font-bold  text-white bg-black">Enroll now!</button></p>
+                        <p className='mt-3 items-center flex justify-center text-center '><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-8 py-5 items-center tex-sm font-bold  text-white bg-black">Enroll now!</button></p>
                     </div>
 
                 </div>
@@ -295,7 +297,7 @@ const Hero = () => {
             </div>
             <div className="md:my-16 my-5">
 
-                <p className='mt-3 items-center flex justify-center text-center '><button className="rounded-full px-8 py-5 items-center tex-sm font-bold  text-white bg-[#D8383A]">Enroll now!</button></p>
+                <p className='mt-3 items-center flex justify-center text-center '><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-8 py-5 items-center tex-sm font-bold  text-white bg-[#D8383A]">Enroll now!</button></p>
             </div>
         </div>
         <div className=" bg-[#D8383A]  py-10">
@@ -303,7 +305,7 @@ const Hero = () => {
                 <div className=" text-white"> <p className='text-4xl font-bold leading-relaxed'>
                     Your Wealth <br /> Creation Story <br /> Awaits You!
                 </p>
-                    <p className='mt-5 md:flex hidden'><button className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
+                    <p className='mt-5 md:flex hidden'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-5 py-2 tex-sm font-bold  bg-white text-black">Enroll now!</button></p></div>
                 <div className="md:m-0 mx-0">
 
 
@@ -316,10 +318,10 @@ const Hero = () => {
                 </div>
 
             </div>
-            <p className='mt-3 pb-24 mx-5 md:hidden flex text-center'><button className="rounded-full px-5 py-4 tex-sm font-bold  bg-white text-black">Get Started</button></p>
+            <p className='mt-3 pb-24 mx-5 md:hidden flex text-center'><button   onClick={() => scrollToSection('target-section')} className="rounded-full px-5 py-4 tex-sm font-bold  bg-white text-black">Get Started</button></p>
         </div>
 
-        <div className="bg-[#5741DB] text-white py-10 items-center  justify-center" id="scroll-container">
+        <div className="bg-[#5741DB] text-white py-10 items-center  justify-center" id="target-section">
             <div className="items-center text-center ">
                 <p className="">Best Value. One Time Payment</p>
                 <p className="text-2xl py-5"><span className="font-bold text-5xl">₦170,000</span> <span className="text-gray-200 px-5">~$200</span> </p></div>
@@ -329,7 +331,7 @@ const Hero = () => {
                         <p className="text-gray-400 py-5">DIRECT BANK TRANSFER</p>
                         <p className=" py-2">Bank: First Bank Nigeria</p>
                         <p className=" py-2">Account name: Digital Abundance</p>
-                        <p className="whitespace-nowrap flex items-center py-2">Account number: 2033448026<span className="pl-3">
+                        <p className="whitespace-nowrap flex items-center py-2 text-sm">Account number: 2033448026<span className="pl-3">
                             <Copy text="2033448026" /> </span> </p>
                     </div>
 
@@ -337,7 +339,7 @@ const Hero = () => {
                         <p className="text-gray-400 py-5">USDT PAYMENT</p>
                         <p className=" py-2">Wallet address</p>
 
-                        <p className="whitespace-nowrap flex items-center py-2">TKSXg5fTjnDhT5H6a3Q8kTL4735esBuL9R<span className="pl-1">
+                        <p className="whitespace-nowrap flex items-center py-2 text-sm">TKSXg5fTjnDhT5H6a3Q8kTL4735esBuL9R<span className="pl-1">
                             <Copy text="TKSXg5fTjnDhT5H6a3Q8kTL4735esBuL9R" /> </span> </p>
                         <p className="py-2">Network type: TRC20</p>
                     </div>
@@ -347,7 +349,7 @@ const Hero = () => {
                 <p className="">Send proof of all payment to Ruth</p>
                 <p className='mt-3 pb-24 mx-auto justify-center items-center flex text-center'>
                     <Link href="https://api.whatsapp.com/send?phone=2348094703225&text=Hello%20Ruth">
-                    <button className="rounded-full px-5 py-3 tex-sm font-bold flex items-center whitespace-nowrap space-x-2  text-white bg-[#07A16A]">
+                    <button    className="rounded-full px-5 py-3 tex-sm font-bold flex items-center whitespace-nowrap space-x-2  text-white bg-[#07A16A]">
                         <span className="">
                             <Image  src={message} alt="chat Ruth" width={50} height={30} className="w-6 h-6"/>
                         </span>
