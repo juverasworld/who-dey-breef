@@ -127,7 +127,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <div className="flex md:flex-row  justify-center   flex-col ">
+        <div className="flex lg:flex-row  justify-center flex-col ">
             <div className=" my-10 mx-5">
                 <p className="text-2xl   font-bold text-gray-400">Learn from</p>
                 <p className="font-bold text-5xl my-4 hero ">Chris Ani</p>
@@ -345,9 +345,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="items-center text-center my-5 md:my-16">
+            <div className="items-center text-center my-10 md:my-16">
                 <p className="">Send proof of all payment to Ruth</p>
-                <p className='mt-3 pb-24 mx-auto justify-center items-center flex text-center'>
+                <p className='mt-7 pb-24 mx-auto justify-center items-center flex text-center'>
                     <Link href="https://api.whatsapp.com/send?phone=2348094703225&text=Hello%20Ruth">
                     <button    className="rounded-full px-5 py-3 tex-sm font-bold flex items-center whitespace-nowrap space-x-2  text-white bg-[#07A16A]">
                         <span className="">
