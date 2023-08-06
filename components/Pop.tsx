@@ -19,7 +19,7 @@ const Popup = () => {
         <p className="font-bold text-2xl md:text-4xl">Unlock The Secrets Of <br className="lg:flex hidden" />Wealthy Trading in 5 Days! </p>
         <p className='md:text-sm text-xs'>Trade your way out of recession with this one-of-a-kind <br className="md:flex hidden" /> opportunity to immerse yourself in the world of physical <br className="md:flex hidden" /> trading and gain invaluable knowledge from industry<br className="md:flex hidden" /> experts.</p>
         <p >
-            <Link href="/master-class">
+            <Link href="/">
             <button className="rounded-full px-5 py-2 tex-sm font-bold  text-white bg-[#D8383A] ">Learn More!</button>
             </Link>
             </p>

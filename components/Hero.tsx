@@ -1,6 +1,7 @@
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import Link from "next/link"
 import Copy from "./Copy";
+import Head from "next/head"
 import Pop from "./Pop";
 import message from "../public/message.png"
 import hero from '../public/hero.png'
@@ -24,7 +25,10 @@ const Hero = () => {
           
     return (
         <>
-        
+        <Head>
+        <title>Digitial Abundance Master-Class </title>
+        <link rel="icon" href="/rawLogo.png" />
+      </Head>
         <Pop/>
         <section className="mx-2"  >
             <div className="text-center  my-10 mx-3 "><p className="md:text-5xl text-[39px] hero font-extrabold whitespace-normal">Unlock The Secrets Of <br className="md:flex hidden" /> Wealthy Trading In 5 Days!</p>
